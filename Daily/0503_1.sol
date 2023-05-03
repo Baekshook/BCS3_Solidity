@@ -47,3 +47,26 @@ contract UintandString {
         return (a, b);
     }
 }
+
+contract A {
+
+    // 제곱 방법1
+    function square(uint a) public pure returns(uint) {
+        return a * a;
+    }
+
+    // 제곱 방법2
+    function square2(uint a) public pure returns(uint) {
+        return a ** 2;
+    }
+
+    // 세제곱
+    function square3(uint a) public pure returns(uint) {
+        return a ** 2;
+    }
+
+    // a의 b제곱
+    function square4(uint a, uint b) public pure returns(uint) {
+        return a ** b;
+    }
+}
