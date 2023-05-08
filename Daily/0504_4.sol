@@ -2,20 +2,6 @@
 
 pragma solidity ^0.8.18;
 
-/*
-실습가이드
-1. 1 -> push, 2 -> push, 3 -> push, 4 -> push
-2. getLength 해보기 -> 4 확인
-3. getNumber -> 1,2,3,4 각각 해보기 -> 각각 1,2,3,4 확인
-4. pop 해보기
-5. getLength 해보기 -> 3확인
-6. getNumber -> 1,2,3,4 각각 해보기 -> 각각 1,2,3, 오류 확인
-7. deleteNum -> 2 해보기
-8. getNumber -> 2 해보기 -> 0 확인
-9. changeNum -> 2,5 해보기
-10. getNumber -> 2 해보기 -> 5 확인 
-*/
-
 contract StringAndBytes {
     string a;
 
