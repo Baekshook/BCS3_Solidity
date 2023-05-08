@@ -44,6 +44,10 @@ contract Struct {
         return students[_n-1];
     }
 
+    function getStudent2(uint _n) public view returns(string memory, string memory) {
+        return (students[_n-1].name, students[_n-1].gender);
+    }
+
     function getStudents() public view returns(Student[] memory) {
         return students;
     }
