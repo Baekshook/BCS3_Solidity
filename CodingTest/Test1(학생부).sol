@@ -169,4 +169,20 @@ contract Test {
         return (F_Storage.length, count, F_Storage);
     }
 
+    function Sclass() public view returns(Student[] memory){
+        Student[] memory S_Students = studentsArr;
+        Student[] memory S_Class = new Student[](4);
+
+        for(uint i=0; i<studentsArr.length-1; i++) {
+            for(uint j=i+1; j<S_Students.length; j++) {
+                if(S_Students[i].score < S_Students[j].score) {
+                    (S_Students[i], S_Students[j]) = (S_Students[j], S_Students[i]);
+                }
+            }
+        }
+        for(uint i=0; i<4; i++) {
+            S_Class[i] = S_Students[i];
+        }
+        return S_Class;
+    }
 }
