@@ -2,10 +2,6 @@
 
 pragma solidity ^0.8.18;
 
-// SPDX-License-Identifier: GPL-3.0
-
-pragma solidity ^0.8.18;
-
 /*
 실습가이드
 1. 1번 지갑 준비(주소 복붙) -> setOwner, 2번 지갑 준비(주소 복붙) -> setA
